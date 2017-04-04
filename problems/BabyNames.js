@@ -89,8 +89,6 @@ function mergeFrequencies(names, mergedSynonyms) {
   return toTuples(mergedFrequencies)
 }
 
-
-
 function toTuples(obj) {
   var tuples = []
 
