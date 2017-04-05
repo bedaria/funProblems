@@ -1,7 +1,7 @@
 const chai = require('chai')
 const expect = chai.expect
-const babyNames = require('../problems/BabyNames.js')
-const babyNames_sol2 = require('../problems/BabyNames_solution2.js')
+const babyNames = require('../BabyNames.js')
+const babyNames_sol2 = require('../BabyNames_solution2.js')
 const mergeFrequenciesFunctions = [babyNames.mergeFrequencies, babyNames_sol2.mergeFrequencies2]
 
 describe("function toTuples", () => {
