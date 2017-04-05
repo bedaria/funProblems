@@ -1,0 +1,44 @@
+BabyNames Complexity Analysis
+
+TIME COMPLEXITY:
+The problem is solved by calling mergeSynonyms then calling mergeFrequencies or
+mergeFrequencies2.
+
+1) Call to mergeSynonyms: O(n)
+Given: array <- length n,
+For every element there will be two variable assignments and two calls to
+addPair(). For each call, addPair() will do one comparison. Since both
+comparisons and assignments, in this case, run in constant time the time
+complexity is O(n*(4c)) = O(n)
+
+2) Call to mergeFrequencies/mergeFrequencies2: O(m*n)
+Given: array <- length m
+       obj   <- n keys, values are arrays of at most length n-1 (Since any name
+                can be connected to every other name)
+
+For all m names check all n-1 synonyms, O(m*n), to create an object of at most
+size m. Then run toTuples, O(m), on that object.
+So O(m*n-1 + m) ~ O(m(1+n-1)) ~ O(m*n)
+(Since variable assignments, Set.has, Set.add, checking if keys exist and
+adding to objects, as well as pushing to arrays are all done in constant times.)
+
+3)Call to toTuples: O(m)
+Given: object <- m keys
+For each key create a tuple, so the complexity is O(m)
+
+So the final time complexity is O(m*n+n) ~ O(m*n)
+(The object of names is probably a lot bigger than the object of synonyms,
+ so m > n )
+
+SPACE COMPLEXITY: O(n*n + m).
+In mergeSynonyms, given array of length n, an object with at most n keys, where
+each value is an array of at most n-1 is created.
+In mergeFrequencies/mergeFrequencies2, given an array of size m, an object of at most size m
+is created.
+In toTuples, given an object with m keys, an array of size m is created.
+
+So the total space complexity, using either solution, will be very roughly
+O(n*n + m).
+
+(The object of names is probably a lot bigger than the object of synonyms,
+ so m > n )
