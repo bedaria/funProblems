@@ -1,6 +1,5 @@
 const chai = require('chai')
 const expect = chai.expect
-const assert = chai.assert
 const babyNames = require('../problems/BabyNames.js')
 
 describe("function toTuples", () => {
