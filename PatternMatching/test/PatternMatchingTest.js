@@ -57,7 +57,7 @@ describe("function patternMatching()", () => {
     expect(patternMatching('foodstain', 'abb')).to.be.equal(false)
   })
 
-  // it("Works for ('foodstain', 'abb')", () => {
-  //   expect(patternMatching('foodstainain', 'abb')).to.be.equal(false)
-  // })
+  it("Works for ('foodstainain', 'abb')", () => {
+    expect(patternMatching('foodstainain', 'abb')).to.be.equal(true)
+  })
 })
