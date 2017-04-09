@@ -1,6 +1,6 @@
 const chai = require('chai')
 const expect = chai.expect
-const patternMatching = require('../PatternMatching.js')
+const patternMatching = require('../patternMatching.js')
 
 
 describe("function patternMatching()", () => {
