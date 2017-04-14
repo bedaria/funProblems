@@ -3,7 +3,7 @@ const expect = chai.expect
 const patternMatchingN = require('../patternMatchingN.js')
 
 
-describe("function patternMatchingNNN()", () => {
+describe("function patternMatchingN()", () => {
 
   it("Works for ('', 'abvnfj')", () => {
     expect(patternMatchingN('', 'abvnfj')).to.be.equal(false)

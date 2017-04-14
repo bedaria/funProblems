@@ -34,7 +34,7 @@ describe("function mergeSynonyms", () => {
 
   it("For [15,15,15,15,15] returns 45", () => {
     expect(findOptimalSchedule([15,15,15,15,15])).to.be.eql(45)
-  }) 
+  })
 
   it("For [30,15,60,75,45,15,15,45] returns 180", () => {
     expect(findOptimalSchedule([30,15,60,75,45,15,15,45])).to.be.eql(180)

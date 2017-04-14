@@ -2,7 +2,7 @@
   "name": "funproblems",
   "version": "1.0.0",
   "description": "",
-  "main": "BabyNames.js",
+  "main": "",
   "scripts": {
     "test": "./node_modules/.bin/mocha --recursive"
   },

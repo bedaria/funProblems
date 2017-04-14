@@ -8,13 +8,11 @@ set the masseuse can honor. Return the number of minutes.
 INPUT: [30,15,60,75,45,15,15,45]
 OUTPUT: 180 minutes, ([30, 60, 45, 45])
 */
-
 function findOptimalSchedule(array) {
   if(!array.length)
     return 0
 
   var bestTotal = 0
-  var bestAppointments = []
 
   function findBest(currentIdx, total) {
     if(currentIdx >= array.length - 2)
