@@ -9,11 +9,10 @@ function findLargestSum(sequence) {
 
   var largestSum = sequence[0] + sequence[1];
   var sumSoFar = sequence[0] + sequence [1];
-  var anotherSum = null
+  var anotherSum = sumSoFar
 
   for(var i = 2; i < sequence.length; i++) {
     sumSoFar += sequence[i]
-    console.log(sumSoFar,">",largestSum, "=", sumSoFar > largestSum)
     largestSum = sumSoFar > largestSum ? sumSoFar : largestSum
     anotherSum = sumSoFar
 
